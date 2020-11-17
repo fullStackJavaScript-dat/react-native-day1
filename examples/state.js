@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Button, Text, View } from "react-native";
 
-Cafe = () => {
+//https://reactnative.dev/docs/state
+StateDemo = () => {
   return (
-    <View style={{  flex: 1, paddingTop: 22}}>
-    <Text style={{fontSize: 18}}>Change me to demonstrate State in React with Hooks</Text>
+    <View style={{ flex: 1, paddingTop: 22 }}>
+      <Text style={{ fontSize: 18 }}>Change me to demonstrate State in React with Hooks</Text>
     </View>
   );
 }
@@ -13,8 +14,8 @@ Cafe = () => {
 export default function StateScreen() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={{fontSize:24}}>State Demo</Text>
-      <Cafe />
+      <Text style={{ fontSize: 24 }}>State Demo</Text>
+      <StateDemo />
     </View>
   );
 }
