@@ -22,64 +22,90 @@ function HomeScreen({ navigation }) {
       padding: 5, flex: 1, flexDirection: "column",
       alignItems: 'center', justifyContent: 'flex-start', alignItems: "stretch"
     }}>
-      <Text style={{ textAlign: "center", fontSize: 20 }}>All Examples</Text>
+      <Text style={{ textAlign: "center", fontSize: 20, margin: 8, marginBottom: 15 }}>All Examples</Text>
       <ScrollView>
-      <Button
-        title="What to do with this code "
-        onPress={() => navigation.navigate('Info')}
-      />
-      <Button
-        title="Go to Props Demo "
-        onPress={() => navigation.navigate('Props')}
-      />
-      <Button
-        title="Go to State Demo "
-        onPress={() => navigation.navigate('StateDemo')}
-      />
-      <Button
-        title="Text Input Demo "
-        onPress={() => navigation.navigate('TextInputDemo')}
-      />
-      <Button
-        title="TouchableHighlight Demo"
-        onPress={() => navigation.navigate('TouchableHighlightDemo')}
-      />
-      <Button
-        title="TouchableOpacity Demo"
-        onPress={() => navigation.navigate('TouchableOpacityDemo')}
-      />
-      <View style={{ borderBottomColor: 'gray', borderBottomWidth: 1, }} />
-      <Button
-        title="Flex Direction Demo "
-        onPress={() => navigation.navigate('FlexDirectionDemo')}
-      />
-      <Button
-        title="Justify Content Demo "
-        onPress={() => navigation.navigate('justifyContentDemo')}
-      />
-      <Button
-        title="Align Items Demo "
-        onPress={() => navigation.navigate('AlignItemsDemo')}
-      />
-      <View style={{ borderBottomColor: 'gray', borderBottomWidth: 1, }} />
-      <Button
-        title="Go to Scroll Demo "
-        onPress={() => navigation.navigate('ScrollDemo')}
-      />
-      <Button
-        title="Go to Flatlist Demo "
-        onPress={() => navigation.navigate('FlatlistDemo')}
-      />
-      <Button
-        title="Go to SectionList Demo "
-        onPress={() => navigation.navigate('SectionListDemo')}
-      />
-      <Button
-        title="Go to Fetch Demo "
-        onPress={() => navigation.navigate('FetchDemo')}
-      
-      />
-      
+        <View style={{ margin: 1 }}>
+          <Button
+            title="What to do with this code "
+            onPress={() => navigation.navigate('Info')}
+          />
+        </View>
+        <View style={{ margin: 1 }}>
+          <Button
+            title="Go to Props Demo "
+            onPress={() => navigation.navigate('Props')}
+          />
+        </View>
+        <View style={{ margin: 1 }}>
+          <Button
+            title="Go to State Demo "
+            onPress={() => navigation.navigate('StateDemo')}
+          />
+        </View>
+        <View style={{ margin: 1 }}>
+          <Button
+            title="Text Input Demo "
+            onPress={() => navigation.navigate('TextInputDemo')}
+          />
+        </View>
+        <View style={{ margin: 1 }}>
+          <Button
+            title="TouchableHighlight Demo"
+            onPress={() => navigation.navigate('TouchableHighlightDemo')}
+          />
+        </View>
+        <View style={{ margin: 1 }}>
+          <Button
+            title="TouchableOpacity Demo"
+            onPress={() => navigation.navigate('TouchableOpacityDemo')}
+          />
+        </View>
+
+        <View style={{ borderBottomColor: 'lightgray', borderBottomWidth: 3, }} />
+        <View style={{ margin: 1 }}>
+          <Button
+            title="Flex Direction Demo "
+            onPress={() => navigation.navigate('FlexDirectionDemo')}
+          />
+        </View>
+        <View style={{ margin: 1 }}>
+          <Button
+            title="Justify Content Demo "
+            onPress={() => navigation.navigate('justifyContentDemo')}
+          />
+        </View>
+        <View style={{ margin: 1 }}>
+          <Button
+            title="Align Items Demo "
+            onPress={() => navigation.navigate('AlignItemsDemo')}
+          />
+        </View>
+        <View style={{ borderBottomColor: 'lightgray', borderBottomWidth: 3, }} />
+        <View style={{ margin: 1 }}>
+          <Button
+            title="Go to Scroll Demo "
+            onPress={() => navigation.navigate('ScrollDemo')}
+          />
+        </View>
+        <View style={{ margin: 1 }}>
+          <Button
+            title="Go to Flatlist Demo "
+            onPress={() => navigation.navigate('FlatlistDemo')}
+          />
+        </View>
+        <View style={{ margin: 1 }}>
+          <Button
+            title="Go to SectionList Demo "
+            onPress={() => navigation.navigate('SectionListDemo')}
+          />
+        </View>
+        <View style={{ margin: 1 }}>
+          <Button
+            title="Go to Fetch Demo "
+            onPress={() => navigation.navigate('FetchDemo')}
+          />
+        </View>
+
       </ScrollView>
     </View>
   );
@@ -106,7 +132,7 @@ function App() {
         <Stack.Screen name="SectionListDemo" component={SectionlistScreen} />
         <Stack.Screen name="FetchDemo" component={HttpViewScreen} />
 
-        
+
       </Stack.Navigator>
     </NavigationContainer>
   );
